@@ -1,0 +1,209 @@
+{
+ "lis": [
+  {
+   "n": 1000,
+   "nlogn_s": 0.0001,
+   "n2_s": 0.012,
+   "L": 55
+  },
+  {
+   "n": 10000,
+   "nlogn_s": 0.0008,
+   "n2_s": 1.128,
+   "L": 190
+  },
+  {
+   "n": 20000,
+   "nlogn_s": 0.0017,
+   "n2_s": 4.651,
+   "L": 271
+  },
+  {
+   "n": 100000,
+   "nlogn_s": 0.01,
+   "n2_s": null,
+   "L": 624
+  },
+  {
+   "n": 1000000,
+   "nlogn_s": 0.1073,
+   "n2_s": null,
+   "L": 1977
+  }
+ ],
+ "viterbi": {
+  "obs": [
+   "Dry",
+   "Dry",
+   "Dry",
+   "Dry",
+   "Dry",
+   "Dry",
+   "Wet",
+   "Dry",
+   "Dry",
+   "Wet",
+   "Dry",
+   "Wet",
+   "Damp",
+   "Damp",
+   "Dry",
+   "Damp",
+   "Damp",
+   "Damp",
+   "Damp",
+   "Dry"
+  ],
+  "true": [
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Cloudy",
+   "Sunny",
+   "Cloudy"
+  ],
+  "decoded": [
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Sunny",
+   "Rainy",
+   "Cloudy",
+   "Rainy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Cloudy",
+   "Sunny"
+  ],
+  "logp": -29.336,
+  "accuracy": 0.6
+ },
+ "held_karp": [
+  [
+   8,
+   0.0002
+  ],
+  [
+   9,
+   0.0005
+  ],
+  [
+   10,
+   0.0013
+  ],
+  [
+   11,
+   0.0034
+  ],
+  [
+   12,
+   0.0076
+  ],
+  [
+   13,
+   0.0171
+  ],
+  [
+   14,
+   0.0399
+  ],
+  [
+   15,
+   0.0884
+  ],
+  [
+   16,
+   0.2018
+  ],
+  [
+   17,
+   0.473
+  ],
+  [
+   18,
+   1.0467
+  ],
+  [
+   19,
+   2.3775
+  ],
+  [
+   20,
+   5.2984
+  ],
+  [
+   21,
+   11.7536
+  ],
+  [
+   22,
+   30.5739
+  ]
+ ],
+ "hk_verified_n_le_9": true,
+ "union_find": [
+  {
+   "compress": false,
+   "rank": false,
+   "time_s": 0.06,
+   "avg_find_depth": 108.689,
+   "n": 10000
+  },
+  {
+   "compress": false,
+   "rank": false,
+   "time_s": 5.94,
+   "avg_find_depth": 1092.126,
+   "n": 100000
+  },
+  {
+   "compress": false,
+   "rank": true,
+   "time_s": 1.14,
+   "avg_find_depth": 0.958,
+   "n": 1000000
+  },
+  {
+   "compress": true,
+   "rank": false,
+   "time_s": 1.38,
+   "avg_find_depth": 2.185,
+   "n": 1000000
+  },
+  {
+   "compress": true,
+   "rank": true,
+   "time_s": 1.12,
+   "avg_find_depth": 0.68,
+   "n": 1000000
+  }
+ ],
+ "two_stack_queue": {
+  "ops": 2000000,
+  "max_ns": 4976417,
+  "avg_ns": 107.8
+ }
+}
